@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    color: white;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+p {
+    font-size: 30px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+button {
+    font-size: 40px;
+    padding: 10px;
+    background-color: rgba(58, 58, 58, 0.8);
+    border: 0;
+    border-radius: 10px;
+    color: rgb(203, 203, 203);
+}
+
+button:hover {
+    background-color: rgba(70,70,70,0.8);
+}
+
+.start {
+    font-size: 50px;
+    background-color: rgba(0, 73, 126, 0.9);
+    color: white;
+}
+
+.start:hover {
+    background-color: rgba(0, 108, 184, 0.9);
+    font-size: 60px;
+}
+
+.right{
+    position: absolute;
+    width: 40%;
+    height: 95vh;
+    background-color:rgba(0, 0, 0, 0.853);
+    top: 50vh;
+    left: 50vw;
+    transform: translate(13%,-50%)
+}
+
+.controls {
+    display: flex;
+}
+
+.controls p{
+    margin-left: 4.8vw;
+}
+
+.controls div {
+    background-color: white;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 1000px;
+}
+
+.controls .blue {
+    left: 2.5vw;
+    background-color: blue;
+}
+
+.controls .purple {
+    left: 8vw;
+    background-color:blueviolet;
+}
+
+.controls .red {
+    left: 13.5vw;
+    background-color: red;
+}
+
+.controls .orange{
+    left: 19vw;
+    background-color: orange;
+}
+
+.controls .yellow {
+    left: 24.5vw;
+    background-color: yellow;
+}
+
+.controls .green {
+    left: 30vw;
+    background-color: green;
+}
+
+.right h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
