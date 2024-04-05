@@ -50,7 +50,8 @@ button:hover {
     background-color:rgba(0, 0, 0, 0.853);
     top: 50vh;
     left: 50vw;
-    transform: translate(13%,-50%)
+    transform: translate(13%,-50%);
+    border-radius: 20px;
 }
 
 .controls {
@@ -103,4 +104,490 @@ button:hover {
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 10px;
+}
+
+.board {
+    width: 95%;
+    height: 88%;
+    background-color: rgba(90, 29, 123, 0.784);
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.guesses {
+    width: 73%;
+    height: 95%;
+    background-color: rgba(101, 101, 101, 0.62);
+    position: absolute;
+    left: 3.0%;
+    top: 2.3%;
+    border-radius: 15px;
+}
+
+.checks{
+    width: 20%;
+    height: 95%;
+    background-color: rgba(63, 5, 144, 0.678);
+    position: absolute;
+    left: 77.75%;
+    top: 2.3%;
+    border-radius: 15px;
+}
+
+.gr1{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 92%;
+}
+
+.gr1 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.gr2{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 82%;
+}
+
+.gr2 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.gr3{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 72%;
+}
+
+.gr3 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.gr4{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 62%;
+}
+
+.gr4 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.gr5{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 52%;
+}
+
+.gr5 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.gr6{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 42%;
+}
+
+.gr6 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.gr7{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 32%;
+}
+
+.gr7 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.gr8{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 22%;
+}
+
+.gr8 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.gr9{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 12%;
+}
+
+.gr9 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.gr10{
+    border: 2px solid black;
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 2%;
+}
+
+.gr10 *{
+    border: 1.5px solid black;
+    width: 1.8vw;
+    height: 1.8vw;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.gc1{
+    left: 9%;
+}
+
+.gc2{
+    left: 24%;
+}
+
+.gc3{
+    left: 39%;
+}
+
+.gc4{
+    left: 54%;
+}
+
+.gc5{
+    left: 69%;
+}
+
+.gc6{
+    left: 84%;
+}
+
+.cr1{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 92%;
+}
+
+.cr1 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr2{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 82%;
+}
+
+.cr2 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr3{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 72%;
+}
+
+.cr3 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr4{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 62%;
+}
+
+.cr4 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr5{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 52%;
+}
+
+.cr5 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr6{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 42%;
+}
+
+.cr6 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr7{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 32%;
+}
+
+.cr7 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr8{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 22%;
+}
+
+.cr8 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr9{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 12%;
+}
+
+.cr9 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cr10{
+    border: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 2%;
+}
+
+.cr10 *{
+    border: 1px solid rgb(255, 255, 255);
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.cc1 {
+    top: 10%;
+    left: 5%;
+}
+
+.cc2 {
+    top: 10%;
+    left: 35%;
+}
+
+.cc3 {
+    top: 10%;
+    left: 65%;
+}
+
+.cc4 {
+    top: 50%;
+    left: 20%;
+}
+
+.cc5 {
+    top: 50%;
+    left: 50%;
+}
+
+.cc6 {
+    top: 50%;
+    left: 80%;
+}
+
+.arrow {
+    width: 0.8vw;
+    height: 1.5vw;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
 }
