@@ -216,12 +216,23 @@ addEventListener('keypress', function (e) {
     if (e.key == '3') {
         clickRed()
     }
+    if (e.key == '4') {
+        clickOrange()
+    }
+    if (e.key == '5') {
+        clickYellow()
+    }
+    if (e.key == '6') {
+        clickGreen()
+    }
     if (e.key == 'Enter') {
         clickSubmit()
     }
 })
 
 function clickSubmit(){
+    arrow.style.top = '97%'
+    arrow.style.left = '12.5%'
     col = 0
     var white = 0
     var black = 0
@@ -262,19 +273,75 @@ function clickSubmit(){
             white += 1
         }
         else if (answer.includes(guess[1])){
-            cmatrix[row][1].style.backgroundColor = 'black'
+            black += 1
         }
         if (guess[2] == answer[2]) {
             white += 1
         }
         else if (answer.includes(guess[2])){
-            cmatrix[row][2].style.backgroundColor = 'black'
+            black += 1
         }
         if (guess[3] == answer[3]) {
-            cmatrix[row][3].style.backgroundColor = 'white'
+            white += 1
         }
         else if (answer.includes(guess[3])){
-            cmatrix[row][3].style.backgroundColor = 'black'
+            black += 1
+        }
+        for (let i = 0; i < white; i++) {
+            cmatrix[row][i].style.backgroundColor = 'white'
+        }
+        for (let i = white; i < white + black; i++) {
+            cmatrix[row][i].style.backgroundColor = 'black'
+        }
+        if (white == 4){
+            alert('You Win!!')
+        }
+    }
+    if (dif === 'hard'){
+        if (guess[0] == answer[0]) {
+            white += 1
+        }
+        else if (answer.includes(guess[0])){
+            black += 1
+        }
+        if (guess[1] == answer[1]) {
+            white += 1
+        }
+        else if (answer.includes(guess[1])){
+            black += 1
+        }
+        if (guess[2] == answer[2]) {
+            white += 1
+        }
+        else if (answer.includes(guess[2])){
+            black += 1
+        }
+        if (guess[3] == answer[3]) {
+            white += 1
+        }
+        else if (answer.includes(guess[3])){
+            black += 1
+        }
+        if (guess[4] == answer[4]) {
+            white += 1
+        }
+        else if (answer.includes(guess[4])){
+            black += 1
+        }
+        if (guess[5] == answer[5]) {
+            white += 1
+        }
+        else if (answer.includes(guess[5])){
+            black += 1
+        }
+        for (let i = 0; i < white; i++) {
+            cmatrix[row][i].style.backgroundColor = 'white'
+        }
+        for (let i = white; i < white + black; i++) {
+            cmatrix[row][i].style.backgroundColor = 'black'
+        }
+        if (white == 6){
+            alert('You Win!!')
         }
     }
     row += 1
@@ -398,6 +465,17 @@ function movearrow(){
 }
 
 function resetgame() {
+    answer = ['n', 'n', 'n', 'n', 'n', 'n']
+    if (dif == 'hard') {
+        for (let i = 0; i < 6; i++) {
+            answer[i] = ['b', 'p', 'r', 'o', 'y', 'g'][Math.floor(Math.random()*6)]
+        }
+    }
+    else {
+        for (let i = 0; i < 4; i++) {
+            answer[i] = ['b', 'p', 'r', 'o', 'y', 'g'][Math.floor(Math.random()*6)]
+        }
+    }
     col = 0
     row = 0
     movearrow()

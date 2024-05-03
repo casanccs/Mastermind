@@ -591,3 +591,7 @@ button:hover {
     position: absolute;
     z-index: 100;
 }
+
+.left{
+    width: 50vw;
+}
